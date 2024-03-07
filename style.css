@@ -27,6 +27,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--Cream);
+  gap: 4rem;
 }
 main {
   display: flex;
@@ -34,10 +35,15 @@ main {
   margin: 3rem 2rem;
   background-color: var(--White);
   border-radius: 1rem;
+  min-width: 25rem;
   max-width: 40rem;
 }
 .img-wrapper {
   border-radius: 1rem 1rem 0 0;
+  /* background-image: url(/images/image-product-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; */
+  width: 100%;
 }
 .hero-img {
   border-radius: inherit;
@@ -64,7 +70,8 @@ main {
   font-family: var(--Font-Secondary);
   font-weight: var(--FWeight-Primary);
   color: var(--Dark-Grayish-Blue);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 .price-wrapper {
   display: flex;
@@ -80,18 +87,19 @@ main {
 }
 .price-previous {
   font-family: var(--Font-Secondary);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-decoration: line-through;
   color: var(--Dark-Grayish-Blue);
 }
 .cart-button {
   font-family: var(--Font-Secondary);
-  font-weight: var(--FWeight-Primary);
+  font-weight: 600;
   font-size: 1.5rem;
   text-decoration: none;
   background-color: var(--Dark-Cyan);
   color: var(--White);
-  padding: 1rem;
+  padding: 1.5rem;
+  margin: 0 0.5rem;
   display: block;
   text-align: center;
   border-radius: 1rem;
@@ -114,18 +122,21 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    padding: 10rem;
+  }
   main {
     flex-direction: row;
-    min-width: 52rem;
+    min-width: 60rem;
     border-radius: 1rem;
   }
   .img-wrapper {
     min-width: 50%;
-    /* border: 1px solid red; */
     border-radius: 1rem 0 0 1rem;
+    /* background-image: url(/images/image-product-desktop.jpg); */
   }
   .hero-img {
-    src: url(/images/favicon-32x32.png);
+    content: url(/images/image-product-desktop.jpg);
     height: 100%;
     width: auto;
     display: block;
@@ -135,15 +146,10 @@ main {
     padding-bottom: 2rem;
     gap: 1.8rem;
   }
-  .item-name {
-    /* margin-top: 1; */
-  }
-  .price-wrapper {
-    /* margin-top: 1rem; */
+  .item-detail {
+    font-size: 1.6rem;
   }
   .cart-button {
     align-self: baseline;
-    /* border: 1px solid red; */
-    /* margin-top: 2rem; */
   }
 }
