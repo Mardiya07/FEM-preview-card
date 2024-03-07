@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --Font-Primary: "Fraunces", serif;
+  --Font-Secondary: "Montserrat", sans-serif;
+  --FWeight-Primary: 400;
+  --FWeight-Secondary: 900;
+  --Dark-Cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-Dark-Blue: hsl(212, 21%, 14%);
+  --Dark-Grayish-Blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Cream);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 2rem;
+  background-color: var(--White);
+  border-radius: 1rem;
+  max-width: 40rem;
+}
+.img-wrapper {
+  border-radius: 1rem 1rem 0 0;
+}
+.hero-img {
+  border-radius: inherit;
+}
+.text-wrapper {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.item-tag {
+  font-family: var(--Font-Secondary);
+  color: var(--Dark-Grayish-Blue);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 0.4rem;
+}
+.item-name {
+  font-family: var(--Font-Primary);
+  font-weight: var(--FWeight-Secondary);
+  font-size: 3rem;
+}
+.item-detail {
+  font-family: var(--Font-Secondary);
+  font-weight: var(--FWeight-Primary);
+  color: var(--Dark-Grayish-Blue);
+  font-size: 1.4rem;
+}
+.price-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.price-current {
+  font-family: var(--Font-Primary);
+  font-weight: var(--FWeight-Secondary);
+  color: var(--Dark-Cyan);
+  font-size: 3rem;
+  /* margin-right: 2rem; */
+}
+.price-previous {
+  font-family: var(--Font-Secondary);
+  font-size: 1.2rem;
+  text-decoration: line-through;
+  color: var(--Dark-Grayish-Blue);
+}
+.cart-button {
+  font-family: var(--Font-Secondary);
+  font-weight: var(--FWeight-Primary);
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: var(--Dark-Cyan);
+  color: var(--White);
+  padding: 1rem;
+  display: block;
+  text-align: center;
+  border-radius: 1rem;
+}
+.cart-button:hover {
+  cursor: pointer;
+  background-color: #214031;
+}
+.cart-icon {
+  width: 1.2rem;
+  height: auto;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+    min-width: 52rem;
+    border-radius: 1rem;
+  }
+  .img-wrapper {
+    min-width: 50%;
+    /* border: 1px solid red; */
+    border-radius: 1rem 0 0 1rem;
+  }
+  .hero-img {
+    src: url(/images/favicon-32x32.png);
+    height: 100%;
+    width: auto;
+    display: block;
+    object-fit: cover;
+  }
+  .text-wrapper {
+    padding-bottom: 2rem;
+    gap: 1.8rem;
+  }
+  .item-name {
+    /* margin-top: 1; */
+  }
+  .price-wrapper {
+    /* margin-top: 1rem; */
+  }
+  .cart-button {
+    align-self: baseline;
+    /* border: 1px solid red; */
+    /* margin-top: 2rem; */
+  }
+}
