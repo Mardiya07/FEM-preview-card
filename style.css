@@ -121,7 +121,7 @@ main {
 
 @media screen and (min-width: 768px) {
   body {
-    padding: 10rem;
+    padding: 15rem;
   }
   main {
     flex-direction: row;
@@ -143,6 +143,9 @@ main {
   .text-wrapper {
     padding-bottom: 2rem;
     gap: 1.8rem;
+  }
+  .item-name {
+    font-size: 3.5rem;
   }
   .item-detail {
     font-size: 1.6rem;
