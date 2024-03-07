@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/Mardiya07/FEM-preview-card)
+- [Live Site URL](https://product-preview-card-mardiya07.netlify.app/)
 
 ### Built with
 
@@ -40,5 +40,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@mardiya07](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@mardiy_a](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@mardiya07](https://www.frontendmentor.io/profile/mardiya07)
+- Twitter - [@mardiy_a](https://www.twitter.com/mardiy_a)
