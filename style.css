@@ -4,7 +4,7 @@
   --Font-Primary: "Fraunces", serif;
   --Font-Secondary: "Montserrat", sans-serif;
   --FWeight-Primary: 400;
-  --FWeight-Secondary: 900;
+  --FWeight-Secondary: 700;
   --Dark-Cyan: hsl(158, 36%, 37%);
   --Cream: hsl(30, 38%, 92%);
   --Very-Dark-Blue: hsl(212, 21%, 14%);
@@ -62,7 +62,8 @@ main {
 .item-name {
   font-family: var(--Font-Primary);
   font-weight: var(--FWeight-Secondary);
-  font-size: 3rem;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
 }
 .item-detail {
   font-family: var(--Font-Secondary);
@@ -146,6 +147,7 @@ main {
   }
   .item-name {
     font-size: 3.5rem;
+    line-height: 3.5rem;
   }
   .item-detail {
     font-size: 1.6rem;
